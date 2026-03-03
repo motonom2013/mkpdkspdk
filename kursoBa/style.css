@@ -1,0 +1,83 @@
+body{display: flex;
+    flex-direction:column;
+}
+html, body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+div{display: flex;
+flex-direction: row;
+height: 100vh;
+justify-content: center;
+}
+nav {
+    background-color: rgb(195, 177, 177);
+    /* padding: 30px; */
+    display: flex;
+    flex-grow: 1;
+}
+header{height: 20%;
+background-color:rgb(154, 128, 128); color: white;
+text-shadow: 0px 0px 7px;
+text-align: center;}
+
+a{text-decoration-line: none;
+    background-color: rgb(106, 87, 87);
+    color: white;
+    padding: 20px;
+    width: 99px;
+    text-align: center;
+    border-radius: 10px;
+    display:inline-block;
+    transition:all 0.3s;
+
+}
+
+a:hover{background-color: rgb(71, 58, 58);
+}
+ul {
+    display: flex;
+    min-width: 250px; 
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+    justify-content: space-around;
+    /* text-align: center; */
+    align-items: center;
+}
+main{background-color: rgb(220, 203, 203);
+    flex-grow: 6;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+img {
+    width: 200px;
+}
+p{text-shadow: 0px 0px 7px;}
+a{text-shadow: 0px 0px 7px;}
+footer{background-color: rgb(83, 63, 63);
+text-align: center;}
+.ee{border: 5px solid rgb(70, 44, 44) ;
+}
+@media screen and (max-width: 500px) {
+    img{height: 150px; width: 90px;}
+    html{font-size: 20px;}
+    nav{width: 100%;}
+    div{flex-direction: column;}
+    ul{width: 100%;}
+    a{width: 90%;
+    display: block;}
+    li{width: 80%;
+    margin: 10px;}
+}
+#rt{animation: m 1s infinite;
+height: 100px;
+width: 100px;
+margin: 25px;}
+@keyframes m{
+0% {transform: rotate(0deg)}
+100%{transform: rotate(360deg)}
+}
